@@ -1,0 +1,15 @@
+cat /etc/passwd
+|
+L-> flag01:42hDRfypTqqnw:[...]
+
+-----------
+
+using kali (or whatever with john the ripper installed on)
+
+echo 42hDRfypTqqnw > hash
+
+john hash
+
+john --show hash
+|
+L->?:abcdefg
