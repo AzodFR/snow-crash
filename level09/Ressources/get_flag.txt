@@ -47,9 +47,9 @@ L-> Injection Linked lib detected exit..
 
 ok so we don't have to reverse the base string, and they prevent us to exploit gcc :P
 
-./level09 a
+./level09 ab
 |
-L-> a
+L-> ac
 
 hum ?? ac ? 
 
@@ -95,7 +95,7 @@ so if we have:
  so it make string[i] = string[i] + i for each char of the string
  let's try to make a reverse algorithm which make string[i] = string[i] - i
 
- let's get the token file from the machine and try ou script
+ let's get the token file from the machine and try our script
 
  ------
 
