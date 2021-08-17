@@ -15,3 +15,5 @@ python brutrot.py
 cdiiddwpgswtgt
 |
 L-> rot(11): nottoohardhere 
+
+or https://www.dcode.fr/chiffre-rot or https://www.dcode.fr/chiffre-cesar

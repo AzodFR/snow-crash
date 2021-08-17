@@ -4,7 +4,7 @@ L-> flag01:42hDRfypTqqnw:[...]
 
 -----------
 
-using kali (or whatever with john the ripper installed on)
+using john the ripper
 
 echo 42hDRfypTqqnw > hash
 
